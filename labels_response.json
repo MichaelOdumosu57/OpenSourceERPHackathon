@@ -1,0 +1,63 @@
+{
+    "label_id": "se-380126",
+    "status": "completed",
+    "shipment_id": "se-2263607",
+    "ship_date": "2019-05-18T00:00:00Z",
+    "created_at": "2019-05-18T19:27:01.7122322Z",
+    "shipment_cost": {
+        "currency": "usd",
+        "amount": 9.38
+    },
+    "insurance_cost": {
+        "currency": "usd",
+        "amount": 0
+    },
+    "tracking_number": "9405511899564702884531",
+    "is_return_label": false,
+    "rma_number": null,
+    "is_international": false,
+    "batch_id": "",
+    "carrier_id": "se-103329",
+    "service_code": "usps_priority_mail",
+    "package_code": "package",
+    "voided": false,
+    "voided_at": null,
+    "label_format": "pdf",
+    "label_layout": "4x6",
+    "trackable": true,
+    "carrier_code": "stamps_com",
+    "tracking_status": "in_transit",
+    "label_download": {
+        "pdf": "https://api.shipengine.com/v1/downloads/10/GbUUqBEIrEC7cKdvCioFHA/label-380126.pdf",
+        "png": "https://api.shipengine.com/v1/downloads/10/GbUUqBEIrEC7cKdvCioFHA/label-380126.png",
+        "zpl": "https://api.shipengine.com/v1/downloads/10/GbUUqBEIrEC7cKdvCioFHA/label-380126.zpl",
+        "href": "https://api.shipengine.com/v1/downloads/10/GbUUqBEIrEC7cKdvCioFHA/label-380126.pdf"
+    },
+    "form_download": null,
+    "insurance_claim": null,
+    "packages": [
+        {
+            "package_code": "package",
+            "weight": {
+                "value": 20,
+                "unit": "ounce"
+            },
+            "dimensions": {
+                "unit": "inch",
+                "length": 1,
+                "width": 2,
+                "height": 3
+            },
+            "insured_value": {
+                "currency": "usd",
+                "amount": 0
+            },
+            "tracking_number": "9405511899564702884531",
+            "label_messages": {
+                "reference1": null,
+                "reference2": null,
+                "reference3": null
+            }
+        }
+    ]
+}

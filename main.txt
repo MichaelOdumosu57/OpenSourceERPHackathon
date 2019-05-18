@@ -137,6 +137,47 @@ also in our api request we can use that label_messages to print cool stuff on th
 
 
 
+walmart requirements
+
+backend will take care of conditionds
+
+2nd page
+were sending summary
+
+{
+    pickupAddr:
+        {
+            zip:
+        },
+    destAddr:
+        {
+            zip
+        },
+    weight:{
+        unit:
+        value:
+    },
+    package_type
+}
+
+shipping quotes
+{
+    carrier_name:
+    business_days:
+    price:
+    choose:false,
+    id:
+}
+
+
+so from the rates repsonse we need to id all the different quotes
+and we choose that quote object from the rates response and continue to the 3rd page
+
+
+
+3rd page
+take that shipping and make an api requests
+
 
 
 
