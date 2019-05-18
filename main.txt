@@ -1,0 +1,145 @@
+got use shipengine from a little bit to a lot
+
+
+lucidchart
+
+workflow visualization: zenhub
+
+split up parts of the fullstack project
+
+
+my side database schemas
+
+
+CREATE TABLE shipment (
+
+    date            timestamp,
+    weight          varchar(1000),
+    height          varchar(1000),
+    width           varchar(1000),
+    depth           varchar(1000),
+    label_link      varchar(1000)
+    
+);
+
+
+vendor compliance
+
+retailer info - table
+carriers - table
+time to get it in
+
+
+
+general
+
+manufacturer must get item to retailer if they dont they will cut your shelving space
+
+problems
+
+
+
+so we have 1 address 1 retailer
+we have 3 different carriers
+
+
+
+we have a contract
+
+we need to get it to the destination within 3 days
+show carriers that meet the requirement for the contract
+
+package
+package_type
+
+carrier
+
+carrier_code
+carrier_nickname
+carrier_friendly_name
+
+delivery
+
+delivery_days
+estimated_delivery_days
+
+price
+
+guaranteed_service
+shipping amount
+    currency, amount
+insurance amount
+    currecny, amount
+negotiated_rate
+
+
+front end
+1st page
+input shipment details
+
+pickup addr,
+delievery addr,
+dimensions,
+    the response is not giving the right dimension back its default
+weight,
+
+description - for the carrier
+
+2nd page
+-   summaries the info and vaildation
+-   small overview of walmart requirements
+-   list of carriers
+-   stamps.com fedex and/or
+
+3rd page
+-   link shipping label everything needed to track
+
+
+1st page
+also in our api request we can use that label_messages to print cool stuff on the shipping label
+{
+    'pickupAddr':  {
+      "name": "Mickey and Minnie Mouse",
+      "phone": "714-781-4565",
+      "company_name": "The Walt Disney Company",
+      "address_line1": "500 South Buena Vista Street",
+      "city_locality": "Burbank",
+      "state_province": "CA",
+      "postal_code": "91521",
+      "country_code": US //backend handles this
+    },
+    'deliveryAddr':  {
+      "name": "Mickey and Minnie Mouse",
+      "phone": "714-781-4565",
+      "company_name": "The Walt Disney Company",
+      "address_line1": "500 South Buena Vista Street",
+      "city_locality": "Burbank",
+      "state_province": "CA",
+      "postal_code": "91521",
+      "country_code": US //backend handles this
+    },
+    'length': a,     //units inches
+    'width': a,
+    'height':a,
+    'unit': inch
+    'weight':a,
+    'carrier': backend grabs all //the backend will get that
+}
+
+
+
+
+
+1st page response for the second page
+    just grab an order
+    compare it to the walmart requirements
+    hold in the backend the best choice for probably the first option
+
+
+
+
+
+
+
+
+types of problems we can have
