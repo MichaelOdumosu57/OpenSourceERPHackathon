@@ -133,7 +133,7 @@ also in our api request we can use that label_messages to print cool stuff on th
 1st page response for the second page
     just grab an order
     compare it to the walmart requirements
-    hold in the backend the best choice for probably the first option
+    
 
 
 
@@ -176,7 +176,21 @@ and we choose that quote object from the rates response and continue to the 3rd 
 
 
 3rd page
-take that shipping and make an api requests
+take this
+last route segement is the :rate_id
+curl 'https://api.shipengine.com/v1/labels/rates/se-2128728' -X POST \
+  -H "Content-type: application/json" \
+  -H "api-key: ElJkhJuQIRoFq/kDEblco4LpZqRCdYNIoAVG7SywSXw" \
+  -d '
+  {
+    "label_format":"pdf"
+    "label_layout": "4x6",
+    "label_download_type": "download"
+  }'
+  
+  
+send them the label download link
+redo as embed tag in front end
 
 
 
