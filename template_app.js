@@ -21,6 +21,7 @@ var rateIdString;
 
 app.post('/backend/nodeBackend/:rate_id', function (req, res, next) {
     
+    var response = res
 	ultraObject.reqBody({
 		stream:req,
 		fn:function(dev_obj){
@@ -31,40 +32,48 @@ app.post('/backend/nodeBackend/:rate_id', function (req, res, next) {
 		    
 		    /*where the rate id is*/ //{
             rateIdString = dev_obj.stream.body
+            
             var options = {
-              "method": "GET",
+              "method": "POST",
               "hostname": "api.shipengine.com",
               "port": null,
-              "path": "/v1/carriers/" + rateIdString ,
+              "path": "/v1/labels/rates/" +rateIdString,
               "headers": {
                 "content-type": "application/json",
-                "api-key": "TEST_bAy47gWWvwWCzHPnXEp5V083hhztc5lDnGbLtAeBp7U",
+                "api-key": "TEST_DNI8r1W7l3taRjXGg1ADw5J+hy7uAPdadsM/8eNK6Gk",
                 "cache-control": "no-cache",
-                "postman-token": "2eb4f880-2d89-59b4-3bcb-07c8a60eff7e"
+                "postman-token": "8fead3f1-1d3d-eeb8-b646-98c541cff875"
               }
             };
-            console.log( rateIdString )
-            console.log( options )
+
+            // console.log( rateIdString )
+            // console.log( options )
             // }  /**/
             
             /*making xhr request to shipengine API*/ //{
             var req = http.request(options, function (res) {
               var chunks = [];
             
+              console.log('moving')
               res.on("data", function (chunk) {
                 chunks.push(chunk);
               });
             
               res.on("end", function () {
                 var body = Buffer.concat(chunks);
-                console.log(body.toString());
+                var neededString =  JSON.parse(body.toString()).label_download.href
+                response.send(neededString)
               });
             });
             
+            // req.write("\n  {\n    \"label_format\":\"pdf\",\n    \"label_layout\": \"4x6\",\n    \"label_download_type\": \"download\"\n  }");
             req.end();
+            
             // }  /**/
             
-            res.send(options)
+            
+            
+            
 		}
 	})
 		    
