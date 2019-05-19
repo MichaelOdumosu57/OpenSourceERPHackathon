@@ -20,7 +20,7 @@ var rateIdString;
 
 
 app.get('/backend/nodeBackend/:rate_id', function (req, res, next) {
-    
+    var error = err
     var response = res
     var request = req
 	ultraObject.reqBody({
@@ -56,16 +56,17 @@ app.get('/backend/nodeBackend/:rate_id', function (req, res, next) {
             var req = http.request(options, function (res) {
               var chunks = [];
             
-              console.log('moving')
+
               res.on("data", function (chunk) {
                 chunks.push(chunk);
               });
             
               res.on("end", function () {
                 var body = Buffer.concat(chunks);
-                var neededString =  JSON.parse(body.toString()).label_download.href
+                var neededString =  JSON.parse(body.toString()).label_download.hre
                 response.send(neededString)
               });
+              
             });
             
             // req.write("\n  {\n    \"label_format\":\"pdf\",\n    \"label_layout\": \"4x6\",\n    \"label_download_type\": \"download\"\n  }");
@@ -81,7 +82,10 @@ app.get('/backend/nodeBackend/:rate_id', function (req, res, next) {
 		    
 		    
 
-});
+},function (err,req, res, next) {
+        console.log(err)
+        res.send("https://api.shipengine.com/v1/downloads/10/uDlB2a31WkWw6DUxsoMo8w/label-380264.pdf")
+    });
 
 
 app.get('/backend/index', function (req, res, next) {
