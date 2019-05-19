@@ -19,9 +19,10 @@ var rateIdString;
 
 
 
-app.post('/backend/nodeBackend/:rate_id', function (req, res, next) {
+app.get('/backend/nodeBackend/:rate_id', function (req, res, next) {
     
     var response = res
+    var request = req
 	ultraObject.reqBody({
 		stream:req,
 		fn:function(dev_obj){
@@ -31,7 +32,8 @@ app.post('/backend/nodeBackend/:rate_id', function (req, res, next) {
 		    console.log(dev_obj.stream.body)
 		    
 		    /*where the rate id is*/ //{
-            rateIdString = dev_obj.stream.body
+		    console.log(request.params.rate_id)
+            rateIdString = request.params.rate_id
             
             var options = {
               "method": "POST",
