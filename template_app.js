@@ -19,6 +19,8 @@ var rateIdString;
 
 app.get('/backend/nodeBackend/object/:obj', function (req, res, next) {
     console.log(   req.params   )
+    console.log(   req.query   )
+    res.send(    req.query   )
 })
 
 
