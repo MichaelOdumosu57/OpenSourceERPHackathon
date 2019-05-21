@@ -1,0 +1,79 @@
+
+
+
+
+2. best use of shipengine API
+
+when it comes to best use case it comes to scalability, we used two different backend software
+node.js and php, running from two different servers (ubuntu 16.04 and AWS)  to show if our API needs to scale and work with other API, the backends can use each other to endpoint communicate with other API as shown in the collaboration betweeen our two backend software
+
+The workflow consists several requests to the shipengineAPI concerning data about the end user which is the manufacturer to ultimately get a shipping label from the API. the backend gets involved
+
+when the user fills out the shipping form, the data gets sent to the MAC php server which takes the metadata and makes a requests for all available rates that respects the wishes of requirements of the retailer
+
+    the shipengine API has a json schema at that part that allows for options considering dimemsions, and according to units (jennifer) our API gives options for the most common expanding our req body to the rates handler for the shipengine API
+
+the results for each quote is projected and sent back to the frontend, the manufacturer end user makes a choice and the backend gets the rate_id for that quote choice.
+
+    A use of the shipengine API is that if we have the rate_id, we do not have to send a massive object request  we can attach it as a route param to the route that allows us to get a label
+
+php receives the rate id from the front end and sends that now to node.js to make a request to the shipengine API and parses the result in order to get the shipping label link. php needs node js to do this because the results are in json and its hard to parse it in php. without knowing what values the response will send
+
+node js sends the shipping label link as a string which php can now use to generate a page with the link embedded into the page with an embed tag availble to download
+
+
+
+slides
+
+creating the account
+
+
+ultimately the manufacturer needs the label
+
+    the important part of the contract shows that the manufacturer needs to send the item in with the requirements of the retailer
+    - this contract description is ultimately embodied in the shipping label
+    - our API automates and optimizes the process so the manufacturer gets the correct shipping label
+
+
+Retrieving End User Data
+
+    -when the manufacturer visits the site for the first time they come to the home page
+    -they would regesiter and in that page it saves all that metadata to access the account and to get shipping rate quoites
+    - then the manufacturer must login , they are brought to a new shipment  page where the manufacturer fills it out
+        (questions: in the future we want to implement an import feature for contracts, get saved in the database so they can choose their contracts which will be loaded into the inputs for the new shipment)
+
+
+API  request for shipping
+    - the metadata gets sent to the Apache server which constructs a request object to the shipengine API for shipping quotes
+    - we make use of the json schema of the route 'v1/rates' to make a greater use of the API in terms of versatility providing more options for the manufacturer in respect to the req. of the retailer. (Jen here) 
+    - the backend sends the request and gets a list of shipping quotes
+
+Manufacturer end user chooses a quote
+
+    M-the backend projects each quote and sends it to the frontend where the manufacturer end user is
+    T- the end user chooses a quote that they desire and presses submit order
+    T- retailer has a requirement which carrier and how many days shipment must arrive by   
+    T- our app helps complies with  relatier
+    T- the rate-id is sent to the backend which is needed to get that important shipping label
+
+Backend teamwork to produce the label
+
+
+    M - the backend receives the rate-id and sends it to a node server running on nginx
+    M - now the php could parse it to find the label link but it not efficient in production in terms of memory and steps requried to pull it, you rather use a javascript backend that JSON is native to which easily grabs the string
+    M- node gets the rate id and makes a request to the shipengine API, because if you have the rateid you have all the request object information needed to make the request which shipengine server is holding making both API do less work in producing the label
+    M - node parses the response object and sends back the label link string
+
+Presenting the shipping label
+
+    -the end user only cares about the label so the label is provided in the full width of the screnn
+    - sice the apache server got the label string from the node server all it needs to do is embed it into a html page, and there it easy is for the end user to download and continue in their ERP
+
+    
+
+
+
+workflow
+the end user log in
+the end user manafacuturer and fills out the information
+the get  quotes
