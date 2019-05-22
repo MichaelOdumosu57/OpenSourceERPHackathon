@@ -1,3 +1,8 @@
+things i learned about js
+some times you have to double parse a string sent in the body to get an object
+put double quotes around the request object before sending to express
+
+
 got use shipengine from a little bit to a lot
 
 

@@ -33,12 +33,28 @@ app.post('/backend/nodeBackend/object/:obj', function (req, res, next) {
 		stream:req,
 		fn:function(dev_obj){
 		},
-		keep:'false',
+		keep:'true',
 		finish:function(dev_obj){
 		    
 		    console.log(   dev_obj.stream.body   )
+		    console.log(   JSON.parse(   JSON.parse(   dev_obj.stream.body   )   )   )
+		    
+    		    /*grabbing part of the object needed for the /v1/labels endpoint*/ //{
+    		    ultraObject.misc[   ultraObject.scope[ultraObject.misc.abelast.length-1]   ].reqObj = JSON.parse(   JSON.parse(   dev_obj.stream.body   )   )
+    		    delete ultraObject.misc[   ultraObject.scope[ultraObject.misc.length-1]   ].reqObj.rate_options
+    		    console.log(   ultraObject.misc[   ultraObject.scope[ultraObject.misc.length-1]   ].reqObj   )
+    		    // }  /**/
+    		    
 		    response.send("https://api.shipengine.com/v1/downloads/10/uDlB2a31WkWw6DUxsoMo8w/label-380264.pdf")
-		    console.log(   JSON.parse(dev_obj.stream)   )
+            ultraObject.misc.minus({
+                index:ultraObject.misc.abelast[
+                    ultraObject.misc.abelast.length-1
+                ]
+            })
+            ultraObject.misc.abelast.minus({
+                index:ultraObject.misc.abelast.length-1
+            })
+		  //  console.log(   JSON.parse(dev_obj.stream)   )
     		
 		}
 	})
@@ -68,8 +84,8 @@ app.post('/backend/nodeBackend/object/:obj', function (req, res, next) {
     
       res.on("end", function () {
         var body = Buffer.concat(chunks);
-        console.log(body.toString());
-        response.send(    JSON.parse(body.toString()).label_download.href  )
+        // console.log(body.toString());
+        // response.send(    JSON.parse(body.toString()).label_download.href  )
       });
     });
     
