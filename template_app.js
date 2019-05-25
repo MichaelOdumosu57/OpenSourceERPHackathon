@@ -26,40 +26,6 @@ app.post('/backend/nodeBackend/object/:obj', function (req, res, next) {
     var nexts = next
     // }  /**/
     
-    
-    
-    /*enabling the API to access needed items*/ //{
-	ultraObject.reqBody({
-		stream:req,
-		fn:function(dev_obj){
-		},
-		keep:'true',
-		finish:function(dev_obj){
-		    
-		    console.log(   dev_obj.stream.body   )
-		    console.log(   JSON.parse(   JSON.parse(   dev_obj.stream.body   )   )   )
-		    
-    		    /*grabbing part of the object needed for the /v1/labels endpoint*/ //{
-    		    ultraObject.misc[   ultraObject.scope[ultraObject.misc.abelast.length-1]   ].reqObj = JSON.parse(   JSON.parse(   dev_obj.stream.body   )   )
-    		    delete ultraObject.misc[   ultraObject.scope[ultraObject.misc.length-1]   ].reqObj.rate_options
-    		    console.log(   ultraObject.misc[   ultraObject.scope[ultraObject.misc.length-1]   ].reqObj   )
-    		    // }  /**/
-    		    
-		    response.send("https://api.shipengine.com/v1/downloads/10/uDlB2a31WkWw6DUxsoMo8w/label-380264.pdf")
-            ultraObject.misc.minus({
-                index:ultraObject.misc.abelast[
-                    ultraObject.misc.abelast.length-1
-                ]
-            })
-            ultraObject.misc.abelast.minus({
-                index:ultraObject.misc.abelast.length-1
-            })
-		  //  console.log(   JSON.parse(dev_obj.stream)   )
-    		
-		}
-	})
-    // }  /**/
-
     // /* setup http request*/ //{
     var options = {
       "method": "POST",
@@ -74,25 +40,68 @@ app.post('/backend/nodeBackend/object/:obj', function (req, res, next) {
       }
     };
     // // }  /**/
+    
+    /*enabling the API to access needed items*/ //{
+	ultraObject.reqBody({
+		stream:req,
+		fn:function(dev_obj){
+		},
+		keep:'true',
+		finish:function(dev_obj){
+		    
+		    console.log(   dev_obj.stream.body   )
+		    console.log(     JSON.parse(   dev_obj.stream.body   )   )
+		    
+    		    /*grabbing part of the object needed for the /v1/labels endpoint*/ //{
+    		    ultraObject.misc[   ultraObject.scope[ultraObject.misc.abelast.length-1]   ].reqObj = JSON.parse(   dev_obj.stream.body   )
+    		    delete ultraObject.misc[   ultraObject.scope[ultraObject.misc.length-1]   ].reqObj.rate_options
+    		     ultraObject.misc[   ultraObject.scope[ultraObject.misc.length-1]   ].reqObj.shipment["service_code"] = "usps_priority_mail",
+    		    console.log(      ultraObject.misc[   ultraObject.scope[ultraObject.misc.length-1]   ].reqObj      )
+    		    // }  /**/
+                		    
+                /*sending our node custom object for the /v1/labels endpoint*/ //{
+                var req = http.request(options, function (res) {
+                  var chunks = [];
+                
+                  res.on("data", function (chunk) {
+                    chunks.push(chunk);
+                  });
+                
+                  res.on("end", function () {
+                    var body = Buffer.concat(chunks);
+                    console.log(   body.toString()   )
+                    response.send(    JSON.parse(body.toString()).label_download.href  )
+                  });
+                });
+                req.write(   JSON.stringify(   ultraObject.misc[   ultraObject.scope[ultraObject.misc.length-1]   ].reqObj   )   );
+                req.end();
+                // }  /**/
+                
 
-    var req = http.request(options, function (res) {
-      var chunks = [];
+            ultraObject.misc.minus({
+                index:ultraObject.misc.abelast[
+                    ultraObject.misc.abelast.length-1
+                ]
+            })
+            ultraObject.misc.abelast.minus({
+                index:ultraObject.misc.abelast.length-1
+            })
+		  //  console.log(   JSON.parse(dev_obj.stream)   )
+    		
+		}
+	})
+    // }  /**/
+
+
+
+
     
-      res.on("data", function (chunk) {
-        chunks.push(chunk);
-      });
-    
-      res.on("end", function () {
-        var body = Buffer.concat(chunks);
-        // console.log(body.toString());
-        // response.send(    JSON.parse(body.toString()).label_download.href  )
-      });
-    });
-    
-    req.write(" \n{\n  \"shipment\": {\n    \"service_code\": \"usps_priority_mail\",\n    \"ship_to\": {\n      \"name\": \"Mickey and Minnie Mouse\",\n      \"phone\": \"+1 (714) 781-4565\",\n      \"company_name\": \"The Walt Disney Company\",\n      \"address_line1\": \"500 South Buena Vista Street\",\n      \"city_locality\": \"Burbank\",\n      \"state_province\": \"CA\",\n      \"postal_code\": \"91521\",\n      \"country_code\": \"US\",\n      \"address_residential_indicator\": \"No\"\n    },\n    \"ship_from\": {\n      \"name\": \"Shippy\",\n      \"phone\": \"512-485-4282\",\n      \"company_name\": \"ShipEngine\",\n      \"address_line1\": \"3800 N. Lamar Blvd.\",\n      \"address_line2\": \"Suite 220\",\n      \"city_locality\": \"Austin\",\n      \"state_province\": \"TX\",\n      \"postal_code\": \"78756\",\n      \"country_code\": \"US\",\n      \"address_residential_indicator\": \"No\"\n    },\n    \"packages\": [\n      {\n        \"weight\": {\n          \"value\": 20,\n          \"unit\": \"ounce\"\n        }\n      }\n    ]\n  }\n }");
-    req.end();
+
     
     
+},function (err,req, res, next) {
+        console.log('this',err)
+        res.send("https://api.shipengine.com/v1/downloads/10/uDlB2a31WkWw6DUxsoMo8w/label-380264.pdf")
 })
 
 
@@ -182,6 +191,7 @@ app.get('/backend/nodeBackend/:rate_id', function (req, res, next) {
     		finish:function(dev_obj){
     		    
     		    rateIdString = dev_obj.stream.body
+    		    onsole.log(rateIdString)
                 if(   dev_obj.stream.body.indexOf('se-') !== -1   ){
         // 		console.log(rateIdString)
                 }
@@ -198,7 +208,7 @@ app.get('/backend/nodeBackend/:rate_id', function (req, res, next) {
 },function (err,req, res, next) {
         // console.log('this',err)
         // res.send("https://api.shipengine.com/v1/downloads/10/uDlB2a31WkWw6DUxsoMo8w/label-380264.pdf")
-    });
+});
 
 
 app.get('/backend/index', function (req, res, next) {
