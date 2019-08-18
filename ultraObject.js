@@ -1,1 +1,0 @@
-/home/uoul/My_Computer/JAVASCRIPT/ultraObject/ultraObject.js
