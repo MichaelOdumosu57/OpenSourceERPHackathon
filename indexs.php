@@ -123,10 +123,19 @@ echo    '</div>';
 
     }
     
+    foreach ($val as $arr) {
     echo '
     </div>'
-         .$arr.'<span>'.$err.'<span>
-    </div>';
+         .$val.
+    '</div>';
+    }
+    
+    foreach ($val as $err) {
+    echo '
+    </div>'
+         .$val.
+    '</div>';
+    }
     echo '</table><input type="submit" value="Submit Order" style="height: 40px;"></form>
     </div>
     </div>';
