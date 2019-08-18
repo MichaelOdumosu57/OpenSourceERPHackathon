@@ -8,3 +8,12 @@ bootstrap driible
 
 idea website on one page but in a way u move in and out of pages with  mouse
 design front end code
+
+
+
+External Deployments
+
+-------------------------------------
+
+use heroku to externally deploy your webapps
+
