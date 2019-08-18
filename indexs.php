@@ -46,7 +46,7 @@ echo    '</div>';
         // "api-key: TEST_DNI8r1W7l3taRjXGg1ADw5J+hy7uAPdadsM/8eNK6Gk",
         "api-key":"TEST_bAy47gWWvwWCzHPnXEp5V083hhztc5lDnGbLtAeBp7U",
         "cache-control: no-cache",
-        "content-length: 8900000"
+        "content-length: 890"
       ),
     ));
 
