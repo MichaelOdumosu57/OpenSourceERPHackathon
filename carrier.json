@@ -1,0 +1,1061 @@
+{
+    "rate_response": {
+        "rates": [
+            {
+                "rate_id": "se-6803296",
+                "rate_type": "shipment",
+                "carrier_id": "se-103352",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 0.5
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "zone": 8,
+                "package_type": "letter",
+                "delivery_days": 4,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-22T00:00:00Z",
+                "carrier_delivery_days": "3",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "USPS First Class Mail",
+                "service_code": "usps_first_class_mail",
+                "trackable": false,
+                "carrier_code": "stamps_com",
+                "carrier_nickname": "ShipEngine Test Account - Stamps.com",
+                "carrier_friendly_name": "Stamps.com",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803297",
+                "rate_type": "shipment",
+                "carrier_id": "se-103352",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 1
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "zone": 8,
+                "package_type": "large_envelope_or_flat",
+                "delivery_days": 4,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-22T00:00:00Z",
+                "carrier_delivery_days": "3",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "USPS First Class Mail",
+                "service_code": "usps_first_class_mail",
+                "trackable": false,
+                "carrier_code": "stamps_com",
+                "carrier_nickname": "ShipEngine Test Account - Stamps.com",
+                "carrier_friendly_name": "Stamps.com",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803298",
+                "rate_type": "shipment",
+                "carrier_id": "se-103352",
+                "shipping_amount": {
+                    "currency": "usd", 
+                    "amount": 3.09
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "zone": 8,
+                "package_type": "package",
+                "delivery_days": 4,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-22T00:00:00Z",
+                "carrier_delivery_days": "3",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "USPS First Class Mail",
+                "service_code": "usps_first_class_mail",
+                "trackable": true,
+                "carrier_code": "stamps_com",
+                "carrier_nickname": "ShipEngine Test Account - Stamps.com",
+                "carrier_friendly_name": "Stamps.com",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803299",
+                "rate_type": "shipment",
+                "carrier_id": "se-103352",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 7.68
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "zone": 8,
+                "package_type": "package",
+                "delivery_days": 3,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-21T00:00:00Z",
+                "carrier_delivery_days": "2",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "USPS Priority Mail",
+                "service_code": "usps_priority_mail",
+                "trackable": true,
+                "carrier_code": "stamps_com",
+                "carrier_nickname": "ShipEngine Test Account - Stamps.com",
+                "carrier_friendly_name": "Stamps.com",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803300",
+                "rate_type": "shipment",
+                "carrier_id": "se-103352",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 12.72
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "zone": 8,
+                "package_type": "medium_flat_rate_box",
+                "delivery_days": 3,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-21T00:00:00Z",
+                "carrier_delivery_days": "2",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "USPS Priority Mail",
+                "service_code": "usps_priority_mail",
+                "trackable": true,
+                "carrier_code": "stamps_com",
+                "carrier_nickname": "ShipEngine Test Account - Stamps.com",
+                "carrier_friendly_name": "Stamps.com",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803301",
+                "rate_type": "shipment",
+                "carrier_id": "se-103352",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 6.98
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "zone": 8,
+                "package_type": "small_flat_rate_box",
+                "delivery_days": 3,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-21T00:00:00Z",
+                "carrier_delivery_days": "2",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "USPS Priority Mail",
+                "service_code": "usps_priority_mail",
+                "trackable": true,
+                "carrier_code": "stamps_com",
+                "carrier_nickname": "ShipEngine Test Account - Stamps.com",
+                "carrier_friendly_name": "Stamps.com",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803302",
+                "rate_type": "shipment",
+                "carrier_id": "se-103352",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 17.47
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "zone": 8,
+                "package_type": "large_flat_rate_box",
+                "delivery_days": 3,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-21T00:00:00Z",
+                "carrier_delivery_days": "2",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "USPS Priority Mail",
+                "service_code": "usps_priority_mail",
+                "trackable": true,
+                "carrier_code": "stamps_com",
+                "carrier_nickname": "ShipEngine Test Account - Stamps.com",
+                "carrier_friendly_name": "Stamps.com",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803303",
+                "rate_type": "shipment",
+                "carrier_id": "se-103352",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 6.48
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "zone": 8,
+                "package_type": "flat_rate_envelope",
+                "delivery_days": 3,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-21T00:00:00Z",
+                "carrier_delivery_days": "2",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "USPS Priority Mail",
+                "service_code": "usps_priority_mail",
+                "trackable": true,
+                "carrier_code": "stamps_com",
+                "carrier_nickname": "ShipEngine Test Account - Stamps.com",
+                "carrier_friendly_name": "Stamps.com",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803304",
+                "rate_type": "shipment",
+                "carrier_id": "se-103352",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 7.03
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "zone": 8,
+                "package_type": "flat_rate_padded_envelope",
+                "delivery_days": 3,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-21T00:00:00Z",
+                "carrier_delivery_days": "2",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "USPS Priority Mail",
+                "service_code": "usps_priority_mail",
+                "trackable": true,
+                "carrier_code": "stamps_com",
+                "carrier_nickname": "ShipEngine Test Account - Stamps.com",
+                "carrier_friendly_name": "Stamps.com",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803305",
+                "rate_type": "shipment",
+                "carrier_id": "se-103352",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 10.75
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "zone": 8,
+                "package_type": "regional_rate_box_a",
+                "delivery_days": 3,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-21T00:00:00Z",
+                "carrier_delivery_days": "2",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "USPS Priority Mail",
+                "service_code": "usps_priority_mail",
+                "trackable": true,
+                "carrier_code": "stamps_com",
+                "carrier_nickname": "ShipEngine Test Account - Stamps.com",
+                "carrier_friendly_name": "Stamps.com",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803306",
+                "rate_type": "shipment",
+                "carrier_id": "se-103352",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 20.98
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "zone": 8,
+                "package_type": "regional_rate_box_b",
+                "delivery_days": 3,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-21T00:00:00Z",
+                "carrier_delivery_days": "2",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "USPS Priority Mail",
+                "service_code": "usps_priority_mail",
+                "trackable": true,
+                "carrier_code": "stamps_com",
+                "carrier_nickname": "ShipEngine Test Account - Stamps.com",
+                "carrier_friendly_name": "Stamps.com",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803307",
+                "rate_type": "shipment",
+                "carrier_id": "se-103352",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 6.78
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "zone": 8,
+                "package_type": "flat_rate_legal_envelope",
+                "delivery_days": 3,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-21T00:00:00Z",
+                "carrier_delivery_days": "2",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "USPS Priority Mail",
+                "service_code": "usps_priority_mail",
+                "trackable": true,
+                "carrier_code": "stamps_com",
+                "carrier_nickname": "ShipEngine Test Account - Stamps.com",
+                "carrier_friendly_name": "Stamps.com",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803308",
+                "rate_type": "shipment",
+                "carrier_id": "se-103352",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 31.08
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "zone": 8,
+                "package_type": "package",
+                "delivery_days": 2,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-20T00:00:00Z",
+                "carrier_delivery_days": "1-2",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "USPS Priority Mail Express",
+                "service_code": "usps_priority_mail_express",
+                "trackable": true,
+                "carrier_code": "stamps_com",
+                "carrier_nickname": "ShipEngine Test Account - Stamps.com",
+                "carrier_friendly_name": "Stamps.com",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803309",
+                "rate_type": "shipment",
+                "carrier_id": "se-103352",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 22.68
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "zone": 8,
+                "package_type": "flat_rate_envelope",
+                "delivery_days": 2,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-20T00:00:00Z",
+                "carrier_delivery_days": "1-2",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "USPS Priority Mail Express",
+                "service_code": "usps_priority_mail_express",
+                "trackable": true,
+                "carrier_code": "stamps_com",
+                "carrier_nickname": "ShipEngine Test Account - Stamps.com",
+                "carrier_friendly_name": "Stamps.com",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803310",
+                "rate_type": "shipment",
+                "carrier_id": "se-103352",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 23.18
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "zone": 8,
+                "package_type": "flat_rate_padded_envelope",
+                "delivery_days": 2,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-20T00:00:00Z",
+                "carrier_delivery_days": "1-2",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "USPS Priority Mail Express",
+                "service_code": "usps_priority_mail_express",
+                "trackable": true,
+                "carrier_code": "stamps_com",
+                "carrier_nickname": "ShipEngine Test Account - Stamps.com",
+                "carrier_friendly_name": "Stamps.com",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803311",
+                "rate_type": "shipment",
+                "carrier_id": "se-103352",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 22.8
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "zone": 8,
+                "package_type": "flat_rate_legal_envelope",
+                "delivery_days": 2,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-20T00:00:00Z",
+                "carrier_delivery_days": "1-2",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "USPS Priority Mail Express",
+                "service_code": "usps_priority_mail_express",
+                "trackable": true,
+                "carrier_code": "stamps_com",
+                "carrier_nickname": "ShipEngine Test Account - Stamps.com",
+                "carrier_friendly_name": "Stamps.com",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803312",
+                "rate_type": "shipment",
+                "carrier_id": "se-103352",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 2.75
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "zone": 8,
+                "package_type": "package",
+                "delivery_days": 10,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-28T00:00:00Z",
+                "carrier_delivery_days": "7",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "USPS Media Mail",
+                "service_code": "usps_media_mail",
+                "trackable": true,
+                "carrier_code": "stamps_com",
+                "carrier_nickname": "ShipEngine Test Account - Stamps.com",
+                "carrier_friendly_name": "Stamps.com",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803313",
+                "rate_type": "shipment",
+                "carrier_id": "se-103352",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 7.95
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "zone": 8,
+                "package_type": "package",
+                "delivery_days": 10,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-28T00:00:00Z",
+                "carrier_delivery_days": "7",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "USPS Parcel Select Ground",
+                "service_code": "usps_parcel_select",
+                "trackable": true,
+                "carrier_code": "stamps_com",
+                "carrier_nickname": "ShipEngine Test Account - Stamps.com",
+                "carrier_friendly_name": "Stamps.com",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803314",
+                "rate_type": "shipment",
+                "carrier_id": "se-103353",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 104.79
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 23.25
+                },
+                "zone": null,
+                "package_type": null,
+                "delivery_days": 2,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-20T08:30:00Z",
+                "carrier_delivery_days": "Monday 5/20 by 08:30 AM",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "FedEx First Overnight®",
+                "service_code": "fedex_first_overnight",
+                "trackable": true,
+                "carrier_code": "fedex",
+                "carrier_nickname": "ShipEngine Test Account - FedEx",
+                "carrier_friendly_name": "FedEx",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803315",
+                "rate_type": "shipment",
+                "carrier_id": "se-103353",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 23.5
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 18.37
+                },
+                "zone": null,
+                "package_type": null,
+                "delivery_days": 2,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-20T10:30:00Z",
+                "carrier_delivery_days": "Monday 5/20 by 10:30 AM",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "FedEx Priority Overnight®",
+                "service_code": "fedex_priority_overnight",
+                "trackable": true,
+                "carrier_code": "fedex",
+                "carrier_nickname": "ShipEngine Test Account - FedEx",
+                "carrier_friendly_name": "FedEx",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803316",
+                "rate_type": "shipment",
+                "carrier_id": "se-103353",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 68.21
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 21.05
+                },
+                "zone": null,
+                "package_type": null,
+                "delivery_days": 2,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-20T15:00:00Z",
+                "carrier_delivery_days": "Monday 5/20 by 03:00 PM",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "FedEx Standard Overnight®",
+                "service_code": "fedex_standard_overnight",
+                "trackable": true,
+                "carrier_code": "fedex",
+                "carrier_nickname": "ShipEngine Test Account - FedEx",
+                "carrier_friendly_name": "FedEx",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803317",
+                "rate_type": "shipment",
+                "carrier_id": "se-103353",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 34.48
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 19.03
+                },
+                "zone": null,
+                "package_type": null,
+                "delivery_days": 3,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-21T10:30:00Z",
+                "carrier_delivery_days": "Tuesday 5/21 by 10:30 AM",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "FedEx 2Day® A.M.",
+                "service_code": "fedex_2day_am",
+                "trackable": true,
+                "carrier_code": "fedex",
+                "carrier_nickname": "ShipEngine Test Account - FedEx",
+                "carrier_friendly_name": "FedEx",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803318",
+                "rate_type": "shipment",
+                "carrier_id": "se-103353",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 29.46
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 18.73
+                },
+                "zone": null,
+                "package_type": null,
+                "delivery_days": 3,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-21T16:30:00Z",
+                "carrier_delivery_days": "Tuesday 5/21 by 04:30 PM",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "FedEx 2Day®",
+                "service_code": "fedex_2day",
+                "trackable": true,
+                "carrier_code": "fedex",
+                "carrier_nickname": "ShipEngine Test Account - FedEx",
+                "carrier_friendly_name": "FedEx",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803319",
+                "rate_type": "shipment",
+                "carrier_id": "se-103353",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 24.03
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 18.4
+                },
+                "zone": null,
+                "package_type": null,
+                "delivery_days": 4,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-22T16:30:00Z",
+                "carrier_delivery_days": "Wednesday 5/22 by 04:30 PM",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "FedEx Express Saver®",
+                "service_code": "fedex_express_saver",
+                "trackable": true,
+                "carrier_code": "fedex",
+                "carrier_nickname": "ShipEngine Test Account - FedEx",
+                "carrier_friendly_name": "FedEx",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            },
+            {
+                "rate_id": "se-6803320",
+                "rate_type": "shipment",
+                "carrier_id": "se-103353",
+                "shipping_amount": {
+                    "currency": "usd",
+                    "amount": 9.55
+                },
+                "insurance_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "confirmation_amount": {
+                    "currency": "usd",
+                    "amount": 0
+                },
+                "other_amount": {
+                    "currency": "usd",
+                    "amount": 0.67
+                },
+                "zone": null,
+                "package_type": null,
+                "delivery_days": 4,
+                "guaranteed_service": false,
+                "estimated_delivery_date": "2019-05-22T00:00:00Z",
+                "carrier_delivery_days": "4",
+                "ship_date": "2019-05-18T00:00:00Z",
+                "negotiated_rate": false,
+                "service_type": "FedEx Ground®",
+                "service_code": "fedex_ground",
+                "trackable": true,
+                "carrier_code": "fedex",
+                "carrier_nickname": "ShipEngine Test Account - FedEx",
+                "carrier_friendly_name": "FedEx",
+                "validation_status": "valid",
+                "warning_messages": [],
+                "error_messages": []
+            }
+        ],
+        "invalid_rates": [],
+        "rate_request_id": "se-555129",
+        "shipment_id": "se-2262877",
+        "created_at": "2019-05-18T16:48:40.4833377Z",
+        "status": "completed",
+        "errors": []
+    },
+    "shipment_id": "se-2262877",
+    "carrier_id": null,
+    "service_code": null,
+    "external_shipment_id": null,
+    "ship_date": "2019-05-18T00:00:00Z",
+    "created_at": "2019-05-18T16:48:38.633Z",
+    "modified_at": "2019-05-18T16:48:38.633Z",
+    "shipment_status": "pending",
+    "ship_to": {
+        "name": "Mickey and Minnie Mouse",
+        "phone": "714-781-4565",
+        "company_name": "The Walt Disney Company",
+        "address_line1": "500 South Buena Vista Street",
+        "address_line2": null,
+        "address_line3": null,
+        "city_locality": "Burbank",
+        "state_province": "CA",
+        "postal_code": "91521",
+        "country_code": "US",
+        "address_residential_indicator": "unknown"
+    },
+    "ship_from": {
+        "name": "Dade Murphy",
+        "phone": "512-485-4282",
+        "company_name": "Zero Cool",
+        "address_line1": "345 Chambers Street",
+        "address_line2": "Suite 100",
+        "address_line3": null,
+        "city_locality": "New York City",
+        "state_province": "NY",
+        "postal_code": "10282",
+        "country_code": "US",
+        "address_residential_indicator": "unknown"
+    },
+    "warehouse_id": null,
+    "return_to": {
+        "name": "Dade Murphy",
+        "phone": "512-485-4282",
+        "company_name": "Zero Cool",
+        "address_line1": "345 Chambers Street",
+        "address_line2": "Suite 100",
+        "address_line3": null,
+        "city_locality": "New York City",
+        "state_province": "NY",
+        "postal_code": "10282",
+        "country_code": "US",
+        "address_residential_indicator": "unknown"
+    },
+    "confirmation": "none",
+    "customs": null,
+    "external_order_id": null,
+    "order_source_code": null,
+    "advanced_options": {
+        "bill_to_account": null,
+        "bill_to_country_code": null,
+        "bill_to_party": null,
+        "bill_to_postal_code": null,
+        "contains_alcohol": false,
+        "delivered_duty_paid": false,
+        "non_machinable": false,
+        "saturday_delivery": false,
+        "dry_ice": false,
+        "dry_ice_weight": null,
+        "freight_class": null,
+        "custom_field1": null,
+        "custom_field2": null,
+        "custom_field3": null
+    },
+    "insurance_provider": "none",
+    "tags": [],
+    "packages": [
+        {
+            "package_code": "package",
+            "weight": {
+                "value": 1,
+                "unit": "ounce"
+            },
+            "dimensions": {
+                "unit": "inch",
+                "length": 0,
+                "width": 0,
+                "height": 0
+            },
+            "insured_value": {
+                "currency": "usd",
+                "amount": 0
+            },
+            "label_messages": {
+                "reference1": null,
+                "reference2": null,
+                "reference3": null
+            }
+        }
+    ],
+    "total_weight": {
+        "value": 1,
+        "unit": "ounce"
+    },
+    "items": []
+}
