@@ -122,6 +122,11 @@ echo    '</div>';
 
 
     }
+    
+    echo '
+    </div>'
+         .$arr.'<span>'.$err.'<span>
+    </div>';
     echo '</table><input type="submit" value="Submit Order" style="height: 40px;"></form>
     </div>
     </div>';
