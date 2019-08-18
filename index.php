@@ -11,7 +11,7 @@ $from_state = $_POST['from_state'];
 $from_postal = $_POST['from_postal'];
 $retailer = $_POST['to_name'];
 
-echo ' <div id="myProgress">
+echo '  <div id="myProgress">
             <div id="myBar" style="width: 66%;">66%</div>
         </div><div class="container">
         <h2>'. $retailer .' Requirements<h2>';
