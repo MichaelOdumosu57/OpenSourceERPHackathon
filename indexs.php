@@ -80,8 +80,8 @@ echo    '</div>';
 
     } else {
     echo '
-    </div>
-        trying to show your values
+    </div>'
+         .$arr.'<span>'.$err.'<span>
     </div>';
       foreach ($rates as $rate) {
         $delivery_time = $rate['delivery_days'];
