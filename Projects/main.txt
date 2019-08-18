@@ -1,0 +1,203 @@
+things i learned about js
+some times you have to double parse a string sent in the body to get an object
+put double quotes around the request object before sending to express
+
+
+got use shipengine from a little bit to a lot
+
+
+lucidchart
+
+workflow visualization: zenhub
+
+split up parts of the fullstack project
+
+
+my side database schemas
+
+
+CREATE TABLE shipment (
+
+    date            timestamp,
+    weight          varchar(1000),
+    height          varchar(1000),
+    width           varchar(1000),
+    depth           varchar(1000),
+    label_link      varchar(1000)
+    
+);
+
+
+vendor compliance
+
+retailer info - table
+carriers - table
+time to get it in
+
+
+
+general
+
+manufacturer must get item to retailer if they dont they will cut your shelving space
+
+problems
+
+
+
+so we have 1 address 1 retailer
+we have 3 different carriers
+
+
+
+we have a contract
+
+we need to get it to the destination within 3 days
+show carriers that meet the requirement for the contract
+
+package
+package_type
+
+carrier
+
+carrier_code
+carrier_nickname
+carrier_friendly_name
+
+delivery
+
+delivery_days
+estimated_delivery_days
+
+price
+
+guaranteed_service
+shipping amount
+    currency, amount
+insurance amount
+    currecny, amount
+negotiated_rate
+
+
+front end
+1st page
+input shipment details
+
+pickup addr,
+delievery addr,
+dimensions,
+    the response is not giving the right dimension back its default
+weight,
+
+description - for the carrier
+
+2nd page
+-   summaries the info and vaildation
+-   small overview of walmart requirements
+-   list of carriers
+-   stamps.com fedex and/or
+
+3rd page
+-   link shipping label everything needed to track
+
+
+1st page
+also in our api request we can use that label_messages to print cool stuff on the shipping label
+{
+    'pickupAddr':  {
+      "from_name": "Mickey and Minnie Mouse",
+      "from_address": "500 South Buena Vista Street",
+      "from_city": "Burbank",
+      "from_state": "CA",
+      "from_postal": "91521",
+      "country_code": US //backend handles this,
+    },
+    'deliveryAddr':  {
+      "to_name": "Mickey and Minnie Mouse",
+      "to_address": "500 South Buena Vista Street",
+      "to_city": "Burbank",
+      "to_state": "CA",
+      "to_postal": "91521",
+      "country_code": US //backend handles this,
+    },
+    'length': a,     //units inches
+    'width': a,
+    'height':a,
+    'unit': inch
+    'weight':value unit,
+    'carrier': backend grabs all //the backend will get that
+}
+
+
+
+
+
+1st page response for the second page
+    just grab an order
+    compare it to the walmart requirements
+    
+    
+    
+
+
+
+walmart requirements
+
+backend will take care of conditionds
+
+2nd page
+were sending summary
+
+{
+    pickupAddr:
+        {
+            zip:
+        },
+    destAddr:
+        {
+            zip
+        },
+    weight:{
+        unit:
+        value:
+    },
+    package_type
+}
+
+shipping quotes
+{
+    carrier_name:
+    business_days:
+    price:
+    choose:false,
+    id:
+}
+
+
+so from the rates repsonse we need to id all the different quotes
+and we choose that quote object from the rates response and continue to the 3rd page
+
+
+
+3rd page
+take this
+last route segement is the :rate_id
+curl 'https://api.shipengine.com/v1/labels/rates/se-2128728' -X POST \
+  -H "Content-type: application/json" \
+  -H "api-key: ElJkhJuQIRoFq/kDEblco4LpZqRCdYNIoAVG7SywSXw" \
+  -d '
+  {
+    "label_format":"pdf"
+    "label_layout": "4x6",
+    "label_download_type": "download"
+  }'
+  
+  
+send them the label download link
+redo as embed tag in front end
+
+
+
+
+
+
+types of problems we can have
