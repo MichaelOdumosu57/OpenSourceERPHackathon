@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Untitled Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet'>
+
+</head>
+<body>
+  <form action="index.php" method="post">
+<div class="form-row">
+  <div class="pickup-address">
+    <div class="form-group col-md-6">
+      <label for="pickup-name">Pickup Name</label>
+      <input type="text" class="form-control" id="pickup-name" name="from_name" placeholder="Pickup Name">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="pickup-address">Pickup Address</label>
+      <input type="text" class="form-control" id="input-address" name="from_address" placeholder="Pickup Address">
+    </div>
+
+    <div class="form-group">
+      <label for="pickup-city">City</label>
+      <input type="text" class="form-control" id="pickup-city" name="from_city" placeholder="City">
+    </div>
+    <div class="form-group">
+      <label for="pickup-state">State</label>
+      <input type="text" class="form-control" id="pickup-state" name="from_state" placeholder="State">
+    </div>
+    <div class="form-group">
+      <label for="pickup-postal">Postal Code</label>
+      <input type="text" class="form-control" id="pickup-postal" name="from_postal" placeholder="Zipcode">
+    </div>
+  </div>
+<br>
+
+  <div class="ship-address">
+    <div class="form-group col-md-6">
+      <label for="ship-name"> Name</label>
+      <input type="password" class="form-control" id="ship-name" name="to_name" placeholder="ship Name">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="ship-address">Delivery Address</label>
+      <input type="text" class="form-control" id="input-address" name="to_address" placeholder="ship Address">
+    </div>
+
+    <div class="form-group">
+      <label for="ship-city">City</label>
+      <input type="text" class="form-control" id="ship-city" name="to_city" placeholder="City">
+    </div>
+    <div class="form-group">
+      <label for="ship-state">State</label>
+      <input type="text" class="form-control" id="ship-state" name="to_state" placeholder="State">
+    </div>
+    <div class="form-group">
+      <label for="ship-postal">Postal Code</label>
+      <input type="text" class="form-control" id="ship-postal" name="to_postal" placeholder="Zipcode">
+    </div>
+  </div>
+
+  </div>
+<br>
+
+
+<div class="form-row">
+  <div class="form-group col-md-6">
+    <label for="weight">Weight</label>
+    <input type="text" class="form-control" name="weight_value" id="weight">
+  </div>
+  <div class="form-group col-md-4">
+    <label for="unit_weight">Unit</label>
+    <select id="unit_weight" name="unit_weight" class="form-control">
+      <option value="pound">lbs</option>
+      <option value="kilogram">kg</option>
+    </select>
+  </div>
+
+<br>
+  <div class="form-group col-md-6">
+    <label for="width">Width</label>
+    <input type="text" class="form-control" name="width_value" id="width">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="length">Length</label>
+    <input type="text" class="form-control" name="length_value" id="length">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="height">Height</label>
+    <input type="text" class="form-control" name="height_value" id="height">
+  </div>
+  <div class="form-group col-md-4">
+    <label for="dimensions">Unit</label>
+    <select id="unit_dimensions" name="unit_dimensions" class="form-control">
+      <option value="inch" selected>inches</option>
+    </select>
+  </div>
+
+</div>
+<br>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>
+</html>
