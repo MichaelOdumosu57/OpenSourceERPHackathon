@@ -74,6 +74,10 @@ echo    '</div>';
 
     if ($err) {
     //   echo "cURL Error #:" . $err;
+    echo '
+    </div>'
+         .$arr.'<span>'.$err.'<span>
+    </div>';
     echo '</table><input type="submit" value="the backend counld not get the needed values" style="height: 40px;"></form>
     </div>
     </div>';
