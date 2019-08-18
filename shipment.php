@@ -2,7 +2,7 @@
 require('navbar.php');
  ?>
 
-  <!--<form action="index.php" method="post">-->
+  <form action="index.php" method="post">
     <div id="myProgress">
         <div id="myBar">33%</div>
     </div>
