@@ -74,19 +74,11 @@ echo    '</div>';
 
     if ($err) {
     //   echo "cURL Error #:" . $err;
-    echo '
-    </div>'
-         .$arr.'<span>'.$err.'<span>
-    </div>';
     echo '</table><input type="submit" value="the backend counld not get the needed values" style="height: 40px;"></form>
     </div>
     </div>';
 
     } else {
-    echo '
-    </div>'
-         .$arr.'<span>'.$err.'<span>
-    </div>';
       foreach ($rates as $rate) {
         $delivery_time = $rate['delivery_days'];
         $carrier_friendly_name = $rate['carrier_friendly_name'];
@@ -123,19 +115,6 @@ echo    '</div>';
 
     }
     
-    foreach ($val as $arr) {
-    echo '
-    </div>'
-         .$val.
-    '</div>';
-    }
-    
-    foreach ($val as $err) {
-    echo '
-    </div>'
-         .$val.
-    '</div>';
-    }
     echo '</table><input type="submit" value="Submit Order" style="height: 40px;"></form>
     </div>
     </div>';
