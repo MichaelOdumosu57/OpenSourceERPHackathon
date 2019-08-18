@@ -79,7 +79,7 @@ echo    '</div>';
     </div>
     </div>';
 
-    } else {
+    } else if (!$err) {
       foreach ($rates as $rate) {
         $delivery_time = $rate['delivery_days'];
         $carrier_friendly_name = $rate['carrier_friendly_name'];
